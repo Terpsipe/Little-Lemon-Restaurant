@@ -1,0 +1,193 @@
+/* Color Scheme used in the whole css */
+
+:root {
+    --my-background: #EDEFFE;
+    --main-color: rgb(50, 61, 48);
+    --main-color-opacity: rgba(50, 61, 48, 0.808);
+    --secondary-green: rgb(155, 178, 113);
+    --my-yellow: rgb(238, 218, 39);
+    --my-yellow-opacity: rgb(238, 218, 39, .6);
+    --boxes: rgba(50, 61, 48, 0.43);
+}
+
+/*** Common variables over the whole page ***/
+
+body {
+    background-color: var(--my-background);
+    font-family: 'Markazi Text', serif;
+    margin: 3rem 5%;
+}
+
+/*** Common text layouts ***/
+
+h2 {
+    font-size: 2vw;
+}
+
+p {
+    font-size: 1.5vw;
+}
+
+/*** Title logo ***/ 
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/*** Navigation ***/
+
+nav ul {
+    font-size: 4vw;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--main-color-opacity);
+    border-radius: 25px;
+    padding-left: 0;
+    padding-bottom: .4rem;
+}
+
+nav li {
+    display: inline-block;
+    padding: 5px;
+}
+
+li a:link  {
+    color: var(--my-yellow);
+}
+
+li a:visited {
+    color: var(--secondary-green);
+}
+
+li a:hover {
+    opacity: .8;
+}
+
+/*** Main Area of the page incl. flexbox layout ***/
+
+section {
+    border-bottom: none;
+    display: flex;
+}
+
+article {
+    flex: 1;   
+}
+
+section a:link {
+    color: black;
+}
+
+section a:visited {
+    color: rgb(61, 78, 30);
+}
+
+/*** Full page image with text ***/
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+}
+
+.centered {
+    color: var(--my-yellow);
+    background-color: var(--main-color-opacity);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container:hover .centered {
+    background-color: var(--main-color);
+}
+
+.title {
+    top: 14%;
+    font-size: 4vw;
+}
+
+.text-part {
+    top: 50%;
+    font-size: 3vw;
+}
+
+article:hover {
+    opacity: 0.8;
+}
+
+/*** Non full page image blocks + text ***/
+
+article:has(h2) {
+    background-color:  var(--boxes);
+    border-radius: 25px;
+    margin: 1.5vw;
+    box-shadow: 2px 2px 2px gray;
+}
+
+h2, article p {
+    text-align: center;
+    margin: 1.5vw 1vw;
+}
+
+h2 + img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    background-size: cover;
+}
+
+/*** Link for stock photo reference according to license ***/
+
+a[href="https://www.vecteezy.com/free-photos"] {
+    font-size: 1vw;
+    margin: 0 1vw;
+}
+
+/*** Footer area containing copyright and logo ***/
+
+footer {
+    display: flex;
+}
+
+footer div {
+    flex: 1;
+    text-align: start;
+}
+
+footer img {
+    width: 20vw;
+}
+
+/*** Adjustments for mobile screen ***/
+
+@media only screen and (max-width: 600px) {
+    section {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    article {
+      flex: none;
+    }
+
+    h2 {
+        font-size: 4vw;
+        padding-top: 2vw;
+    }
+
+    article p {
+        font-size: 3vw;
+        padding-bottom: 2vw;
+    }
+}
