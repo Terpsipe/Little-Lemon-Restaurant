@@ -115,11 +115,10 @@ li a:hover {
 /* Menu: Text */
 
 .menu-container {
-    margin: 0 15%;
-    padding: .1% 5% 2vw;
+    margin: 0 20% 2vw;
+    padding: .1% 5% 3vw;
     border-radius: 5px;
     background-color: rgba(50, 61, 48, 0.251); /*auch oben als var?*/
-    margin-bottom: 2vw;
 }
 
 h1, h2 {
