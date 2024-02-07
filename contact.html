@@ -8,24 +8,69 @@
         <meta name="description" content="A brief description">
         <meta name="Annerose Tartler" content="Little Lemon Restaurant">
 
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="./css/contact.css">
     </head>
-
     <body>
-        <header>
-            <img src="Logos/Asset 16@4x.png">
+        <header class="page-header"> <!-- same as in products.html -->
+            <!--  -->
+            <img src="Logos/Asset 16@4x.png" class="page-logo"> 
+            <nav class="page-nav">
+                <ul class="page-nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="book.html">Book a Table</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="book.html">Book a Table</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
         <main>
-            <h1>Under construction</h1>
-            <h2>This page will be up soon.</h2>
+            <!--image hier-->
+            <div class="contact-container">
+                <div class="location-container">
+                    <img src="images/map-chatgpt4-selfgenerated.png">
+                    <div>
+                        <h2>Our Location</h2>
+                        <div>
+                            <h3>Opening hours:</h3>
+                            <p>
+                                Mon-Thu: 11:30am - 10pm<br>
+                                Fri-Sat: 11:30am - 11 pm<br>
+                                Sun: 11:30am - 9pm
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Address:</h3>
+                            <p>
+                                Little Lemon Restaurant<br>
+                                325 Citrus Drive<br>
+                                Montebello, CA
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <h2>Contact Us</h2>
+                    <form id="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="mail" placeholder="Your email">
+                        <label for="message">Message:</label>
+                        <textarea id="message"></textarea>
+                        <!-- <label for="message">Message:</label>
+                        <input type="text" id="message" name="message"> -->
+                    </form>
+                    <button type="submit" form="contact-form">Contact Us</button>
+                </div>
+                </div>
         </main>
+        <footer> <!-- same as everywhere -->
+            <div>
+                <img src="Logos/Asset 16@4x.png">
+            </div>
+            <div>
+                <p>&#169; Little Lemon Family</p>
+            </div>
+        </footer>
     </body>
 </html>
