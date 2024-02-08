@@ -1,0 +1,125 @@
+/*** Basic layout ***/
+
+/* Colors & Fonts */
+:root {
+    --my-background: #EDEFFE;
+    --main-color: rgb(50, 61, 48); 
+    --main-color-opacity: rgba(50, 61, 48, 0.808);
+    --secondary-green: rgb(155, 178, 113);
+    --my-yellow: rgb(244, 206, 20);
+    --my-yellow-opacity: rgb(244, 206, 20, .6);
+    --boxes: rgba(50, 61, 48, 0.43);
+}
+
+body {
+    background-color: var(--my-background);
+    font-family: 'Markazi Text', serif;
+    margin: 3rem 5%;
+}
+
+/* Font-Sizes */
+
+h1 {
+    font-size: 4vw;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3vw;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2vw;    
+}
+
+p {
+    font-size: 1.8vw;
+}
+
+label {
+    font-size: .7vw;;
+}
+
+/* Header / Navbar as used in all but the index file */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    border: 2px solid var(--main-color-opacity);
+    padding: 10px;
+    padding-bottom: .4rem;
+    margin-bottom: 4vw;
+}
+
+.page-logo {
+    max-width: 30%;
+    background-color: var(--my-background);
+    
+}
+
+.page-nav {
+    width: 70%;
+    font-size: 2.3vw;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.page-nav-list {
+    width: 80%;
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.page-nav li {
+    flex-grow: 1;
+    padding: 5px;
+    text-align: center;
+}
+
+/* li colors as used in all but the index page */
+li a:link, li a:visited  {
+    text-decoration: none;
+}
+
+li a:link  {
+    color: var(--main-color);
+}
+
+li a:visited {
+    color: var(--secondary-green);
+}
+
+li a:hover {
+    opacity: .8;
+}
+
+/* centered containers in contact and products */
+
+.centered-container {
+    margin: 0 5% 2vw;
+    padding: 4% 5% 3vw;
+    border-radius: 5px;
+    background-color: rgba(50, 61, 48, 0.251); /*auch oben als var?*/
+}
+
+/*** Footer area containing copyright and logo ***/
+
+footer {
+    display: flex;
+}
+
+footer div {
+    flex: 1;
+    text-align: start;
+}
+
+footer img {
+    width: 20vw;
+}
+
+/* Still missing: @media adjustments; will maybe follow at some point, but right now my focus is on the JavaScript */

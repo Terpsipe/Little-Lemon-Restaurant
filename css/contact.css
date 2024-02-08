@@ -1,126 +1,14 @@
-/* Color Scheme used in all css files */
-
-:root {
-    --my-background: #EDEFFE;
-    --main-color: rgb(50, 61, 48);
-    --main-color-opacity: rgba(50, 61, 48, 0.808);
-    --secondary-green: rgb(155, 178, 113);
-    --my-yellow: rgb(238, 218, 39);
-    --my-yellow-opacity: rgb(238, 218, 39, .6);
-    --boxes: rgba(50, 61, 48, 0.43);
-}
-
-/*** Common variables over all css files ***/
-
-body {
-    background-color: var(--my-background);
-    font-family: 'Markazi Text', serif;
-    margin: 3rem 5%;
-}
-
-/* Header / Navbar as used in all but the index file */
-
-.page-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 25px;
-    border: 2px solid var(--main-color-opacity);
-    padding: 10px;
-    padding-bottom: .4rem;
-    margin-bottom: 4vw;
-}
-
-.page-logo {
-    max-width: 30%;
-    background-color: var(--my-background);
-    
-}
-
-.page-nav {
-    width: 70%;
-    font-size: 2.3vw;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-}
-
-.page-nav-list {
-    width: 80%;
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-}
-
-.page-nav li {
-    flex-grow: 1;
-    padding: 5px;
-    text-align: center;
-}
-
-/* li colors as used in all but the index page */
-li a:link, li a:visited  {
-    text-decoration: none;
-}
-
-li a:link  {
-    color: var(--main-color);
-}
-
-li a:visited {
-    color: var(--secondary-green);
-}
-
-li a:hover {
-    opacity: .8;
-}
-
-/* picture used everywhere but in the index.html right now */
-
-.image-container {
-    margin-bottom: 4vw;
-}
-
-.image-container img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    border-radius:1%;
-    box-shadow: 2px 2px 2px gray;
-}
-
-/*Still missing: contact.css specific part
-_______________________________________*/
-
-/* Menu: Text */
-
-.contact-container { /* starting point as products container*/
-    margin: 0 5% 2vw;
-    padding: 4% 5% 3vw;
-    border-radius: 5px;
-    background-color: rgba(50, 61, 48, 0.251); /*auch oben als var?*/
-}
+/* Text-adjustments */
 
 h1, h2 {
     text-align: left;
 }
 
-h1 {
-    font-size: 4vw;
-}
-
-h2 {
-    font-size: 3vw;
-}
-
 h3 {
-    font-size: 2vw;
     margin-bottom: 1vw;
 }
 
 p {
-    font-size: 1.8vw;
     margin-top: 0;
 }
 
@@ -158,10 +46,6 @@ label, input, textarea {
     flex: 50%;
 }
 
-label {
-    font-size: .7vw;;
-}
-
 input {
     margin-bottom: .4vw;
 }
@@ -176,24 +60,6 @@ button {
 
 #message {
     height: 10vw;
-}
-
-/*____________________________________________*/
-/*** Footer area containing copyright and logo in all parts  ***/
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-footer div {
-    flex: 1;
-    text-align: start;
-    
-}
-
-footer img {
-    width: 20vw;
 }
 
 /* Still missing: @media adjustments; will maybe follow at some point, but right now my focus is on the JavaScript */
