@@ -37,10 +37,6 @@
 
 /* Menu: Text */
 
-.centered-container {
-    padding: .1% 5% 3vw;
-}
-
 .menu-div, .menu-prices-lunch {
     display: grid;
     grid-template-columns: 9fr 1fr;
