@@ -1,0 +1,29 @@
+Category,Item,Price,Lunch
+Starters,Hummus with Pita,$6.99,yes
+Starters,Baba Ganoush,$7.49,no
+Starters,Stuffed Grape Leaves (Dolma),$8.99, no
+Starters,Falafel (6 pieces),$5.99, yes
+Starters,Labneh with Za'atar,$8.49, no
+Soups,Lentil Soup,$4.99,yes
+Soups,Seafood Chowder,$9.99,no
+Soups,Greek Avgolemono Soup,$5.49,no
+Soups,Tomato and Basil Soup,$6.49,no
+Salads,Greek Salad,$10.99,no
+Salads,Fattoush Salad,$8.99,no
+Salads,Tabbouleh Salad,$7.99,yes
+Salads,Caesar Salad with Grilled Chicken,$12.49,no
+Main Course,Grilled Lamb Kebab Plate,$16.99,no
+Main Course,Chicken Shawarma Platter,$14.99,yes
+Main Course,Moussaka,$13.49,yes
+Main Course,Seafood Paella,$18.99,no
+Main Course,Vegetable Tagine,$11.99,yes
+Sides,Rice Pilaf,$3.49,no
+Sides,Grilled Vegetables,$4.99,no
+Sides,French Fries,$2.99,no
+Sides,Hummus Side,$3.99,no
+Sides,Pita Bread (3 pieces),$1.99,no
+Dessert,Baklava,$5.99,yes
+Dessert,Kunafa,$6.49,no
+Dessert,Greek Yogurt with Honey and Nuts,$4.99,yes
+Dessert,Rice Pudding,$4.49,no
+Dessert,Pistachio Ice Cream,$3.99,yes
