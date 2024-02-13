@@ -8,6 +8,8 @@ buttons.forEach(button => {
         });
 });
 
+// Currently, the menu items are directly embedded within the HTML code.
+// In a subsequent phase, the plan is to relocate them to a separate file and dynamically integrate them into the HTML structure using more JavaScript.
 function loadMenu(daytime){
     if (daytime === "Dinner"){
         mealContainer.innerHTML = 
