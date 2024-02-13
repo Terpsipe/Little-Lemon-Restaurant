@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('yep');
 
     const sendButton = document.querySelector('button[type="submit"]');
 
