@@ -35,6 +35,11 @@
     cursor: pointer;
 }
 
+.centered-container {
+    margin: 0 10vw 2vw;
+    padding: .1% 10vw 3vw;
+}
+
 /* Menu: Text */
 
 .menu-div, .menu-prices-lunch {
@@ -45,6 +50,10 @@
 
 .menu-prices-lunch {
     gap: 0 2em;
+}
+
+p {
+    margin-top: 0;
 }
 
 /* Still missing: @media adjustments; will maybe follow at some point, but right now my focus is on the JavaScript */
